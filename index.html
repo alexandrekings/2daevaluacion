@@ -59,14 +59,20 @@
       <span>________<i class="fa fa-star"></i>________</span>
       <div class="gridportfolio container">
         <div class="row">
-          <div class=" col-sm-4 col-12"><img src="img/cabin.png"></div>
-          <div class="col-sm-4 col-12"><img src="img/cake.png"></div>
-          <div class="col-sm-4 col-12"><img src="img/circus.png"></div>
-          <!-- Force next columns to break to new line at md breakpoint and up -->
-          <div class="w-100 d-none d-md-block"></div>
-          <div class="col-sm-4 col-12"><img src="img/game.png"></div>
-          <div class="col-sm-4 col-12"><img src="img/safe.png"></div>
-          <div class="col-sm-4 col-12"><img src="img/submarine.png"></div>
+          <div class=" col-sm-12 col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#cabin"><img src="img/cabin.png"></a></div>
+          <div class="col-sm-12  col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#cake">
+              <img src="img/cake.png"></a></div>
+          <div class="col-sm-12  col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#circus"><img src="img/circus.png"></a></div>
+        
+          <div class="col-sm-12 col-md-6  col-lg-4">
+            <a data-toggle="modal" data-target="#game"><img src="img/game.png"></a></div>
+          <div class="col-sm-12  col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#safe"><img src="img/safe.png"></a></div>
+          <div class="col-sm-12 col-md-6  col-lg-4">
+            <a data-toggle="modal" data-target="#submarine"><img src="img/submarine.png"></a></div>
         </div>
       </div>
     </div>
@@ -119,11 +125,17 @@
         </div>
         <div class="col-sm-4 col-12">
           <h3>AROUND THE WEB</h3>
-          <i class="fab fa-facebook-f"></i> &nbsp;
-          <i class="fab fa-google-plus-g"></i> &nbsp;
-          <i class="fab fa-twitter"></i> &nbsp;
-          <i class="fab fa-linkedin-in"></i> &nbsp;
-          <i class="fab fa-dribbble"></i> &nbsp;
+          <div class="row">
+            <div class="col-12">
+              <i class="fab fa-facebook-f"></i> &nbsp;
+              <i class="fab fa-google-plus-g"></i> &nbsp;
+              <i class="fab fa-twitter"></i> &nbsp;
+            <!-- Force next columns to break to new line -->
+              <div class="w-100 d-md-block d-lg-none"></div>
+              <i class="fab fa-linkedin-in"></i> &nbsp;
+              <i class="fab fa-dribbble"></i> &nbsp;
+           </div>
+          </div>
           <br>
           <br>
         </div>
@@ -137,6 +149,158 @@
     </div>
   </footer>
   <a href="#hero"><span class="upbtn"><i class="fa fa-chevron-up"></i></span></a>
+<!--modales-->
+
+<!-- Modal Cabin -->
+<div class="modal fade" id="cabin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/cabin.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Cake -->
+<div class="modal fade" id="cake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/cake.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Circus -->
+<div class="modal fade" id="circus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/circus.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Game -->
+<div class="modal fade" id="game" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/game.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Safe -->
+<div class="modal fade" id="safe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/safe.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal submarine -->
+<div class="modal fade" id="submarine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/submarine.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!--javascript-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
