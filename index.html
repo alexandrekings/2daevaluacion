@@ -7,109 +7,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="container-fluid ">
+<body >
   <header id="hero">
-    <nav><h1 class="logo"></h1>
-      <ul>
-        <li>PORTFOLIO</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
-      </ul>
+    <nav class="navbar blueback">
+      <a class="navbar-brand" href="#">FREELANCER</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="navbar-toggler-icon fa fa-bars"></i>
+      </button>
+       <div class="" id="navbarone">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto d-flex flex-column bd-highlight mb-3 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bout">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="greenback hero text-center">
-      <img src="img/profile.png">
-      <h2>FREELANCER</h2>
-      <span>________<i class="fa fa-star"></i>________</span>
-      <p>Web developer * Graphic artist * User Experience Designer</p>
+        <img src="img/profile.png">
+        <h2>FREELANCER</h2>
+        <span>________<i class="fa fa-star"></i>________</span>
+        <p>Web developer * Graphic artist * User Experience Designer</p>
     </div>
   </header>
   <!--portfolio-->
   <div class="whiteback text-center" id="portfolio">
-    <h2>PORTFOLIO</h2>
-    <span>________<i class="fa fa-star"></i>________</span>
-    <div class="gridportfolio">
-      <div class="row">
-        <div class="col-4 col-sm-12">.col-6 .col-sm-4</div>
-        <div class="col-4 col-sm-12">.col-6 .col-sm-4</div>
-        <div class="col-4 col-sm-12">.col-6 .col-sm-4</div>
-
-        <!-- Force next columns to break to new line at md breakpoint and up -->
-        <div class="w-100 d-none d-md-block"></div>
-        <div class="col-4 col-sm-12">.col-6 .col-sm-4</div>
-        <div class="col-4 col-sm-12">.col-6 .col-sm-4</div>
-        <div class="col-4 col-sm-12">.col-6 .col-sm-4</div>
+    <div class="container">
+      <h2>PORTFOLIO</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <div class="gridportfolio container">
+        <div class="row">
+          <div class=" col-sm-12 col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#cabin"><img src="img/cabin.png"></a></div>
+          <div class="col-sm-12  col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#cake">
+              <img src="img/cake.png"></a></div>
+          <div class="col-sm-12  col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#circus"><img src="img/circus.png"></a></div>
+        
+          <div class="col-sm-12 col-md-6  col-lg-4">
+            <a data-toggle="modal" data-target="#game"><img src="img/game.png"></a></div>
+          <div class="col-sm-12  col-md-6 col-lg-4">
+            <a data-toggle="modal" data-target="#safe"><img src="img/safe.png"></a></div>
+          <div class="col-sm-12 col-md-6  col-lg-4">
+            <a data-toggle="modal" data-target="#submarine"><img src="img/submarine.png"></a></div>
+        </div>
       </div>
     </div>
   </div>
     <!--about-->
   <div class="greenback text-center" id="about">
-    <h2>ABOUT</h2>
-    <span>________<i class="fa fa-star"></i>________</span>
-    <div class="gridportfolio">
-      <div class="row">
-        <div class="col-6 col-sm-12">.col-6 .col-sm-4</div>
-        <div class="col-6 col-sm-12">.col-6 .col-sm-4</div>
-       
-
-        <!-- Force next columns to break to new line at md breakpoint and up -->
-        <div class="w-100 d-none d-md-block"></div>
-        <div class="col">
-          <button><i class="fa fa-download"></i>Download Now!</button></div>
+    <div class="container">
+      <h2>ABOUT</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <div class="griddouble">
+        <div class="row">
+          <div class="col-sm-6 col-12"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet tincidunt, penatibus erat porttitor habitasse imperdiet non eu bibendum dapibus, est ullamcorper in mollis phasellus nibh odio facilisis. Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida mollis euismod in arcu rhoncus cursus, montes nibh lacinia congue ridiculus ligula. Id eget justo varius tristique neque diam orci parturient per ut senectus, sed quisque semper ac iaculis convallis scelerisque curae sociosqu mauris volutpat hendrerit, nisi lobortis fermentum aenean tempor facilisi ligula egestas nullam condimentum.</p></div>
+          <div class="col-sm-6 col-12"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet tincidunt, penatibus erat porttitor habitasse imperdiet non eu bibendum dapibus, est ullamcorper in mollis phasellus nibh odio facilisis. Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida mollis euismod in arcu rhoncus cursus, montes nibh lacinia congue ridiculus ligula. Id eget justo varius tristique neque diam orci parturient per ut senectus, sed quisque semper ac iaculis convallis scelerisque curae sociosqu mauris volutpat hendrerit, nisi lobortis fermentum aenean tempor facilisi ligula egestas nullam condimentum.</p></div>
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+          <div class="col">
+            <button><i class="fa fa-download"></i>  Download Now!</button></div>
+        </div>
       </div>
     </div>
   </div>
   <!--contactme-->
-    <div class="greenback text-center" id="about">
-    <h2>CONTACT ME</h2>
-    <span>________<i class="fa fa-star"></i>________</span>
-    <form class="text-center">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">email Adress</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Prone number</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send</button>
-    </form>
+  <div class="whiteback text-center" id="contact">
+    <div class="container">
+      <h2>CONTACT ME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <form class="text-left">
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email adress">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prone number">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary greenback">Send</button>
+      </form>
+    </div>
   </div>
-  <footer class="blueback">
+  <footer class="blueback text-center">
+    <div class="container">
     <div class="row">
-        <div class="col-4 col-sm-12">
+        <div class="col-sm-4 col-12">
           <h3>LOCATION</h3>
           <p>2215 John Daniel Drive<br>clarckMo 654567</p>
         </div>
-        <div class="col-4 col-sm-12">
+        <div class="col-sm-4 col-12">
           <h3>AROUND THE WEB</h3>
-          <i class="fa fa-facebook"></i> &ndsp;
-          <i class="fa fa-facebook"></i> &ndsp;
-          <i class="fa fa-facebook"></i> &ndsp;
-          <i class="fa fa-facebook"></i> &ndsp;
-          <i class="fa fa-facebook"></i> &ndsp;
+          <div class="row">
+            <div class="col-12">
+              <i class="fab fa-facebook-f"></i> &nbsp;
+              <i class="fab fa-google-plus-g"></i> &nbsp;
+              <i class="fab fa-twitter"></i> &nbsp;
+            <!-- Force next columns to break to new line -->
+              <div class="w-100 d-md-block d-lg-none"></div>
+              <i class="fab fa-linkedin-in"></i> &nbsp;
+              <i class="fab fa-dribbble"></i> &nbsp;
+           </div>
+          </div>
+          <br>
+          <br>
         </div>
-        <div class="col-4 col-sm-12">
+        <div class="col-sm-4 col-12">
           <h3>ABOUT FREELANCER</h3>
           <p>
             Freelance in a free to use open source<br>Bootrstrap theme created by <span class="greentext">Start <br> Bootstrap</span>.
           </p>
         </div>
       </div>
+    </div>
   </footer>
+  <a href="#hero"><span class="upbtn"><i class="fa fa-chevron-up"></i></span></a>
+<!--modales-->
 
-  
-
+<!-- Modal Cabin -->
+<div class="modal fade" id="cabin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/cabin.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Cake -->
+<div class="modal fade" id="cake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/cake.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Circus -->
+<div class="modal fade" id="circus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/circus.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Game -->
+<div class="modal fade" id="game" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/game.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Safe -->
+<div class="modal fade" id="safe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/safe.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal submarine -->
+<div class="modal fade" id="submarine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+         <h2>PROJECT NAME</h2>
+      <span>________<i class="fa fa-star"></i>________</span>
+      <br>
+      <br>
+     <img src="img/submarine.png">
+     <br>
+     <br>
+     <p>Nulla integer aptent dapibus id nostra habitant accumsan, phasellus gravida</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn greenback" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--javascript-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
